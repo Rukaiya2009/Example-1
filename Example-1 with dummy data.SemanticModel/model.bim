@@ -13,6 +13,10 @@
       {
         "name": "__PBI_TimeIntelligenceEnabled",
         "value": "1"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Data Professional Survey\"]"
       }
     ],
     "culture": "en-US",
@@ -28,6 +32,12 @@
         }
       }
     ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-CA",
     "tables": [
       {
         "name": "DateTableTemplate_e7df8c2b-40b4-4ea2-bea0-2794212ce6f7",
@@ -230,6 +240,402 @@
             "source": {
               "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
               "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Data Professional Survey",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9aed5e40-7593-4696-8239-2fd88ee0c8ec",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c40b3c75-fc40-4ed2-aeb1-e956c532fe44",
+            "sourceColumn": "Column2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ac47e0c2-ba14-49b0-83d6-57ced8e934c8",
+            "sourceColumn": "Column3",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "36e69129-535a-4b9a-8a0a-d5697e800dea",
+            "sourceColumn": "Column4",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column5",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3294abf8-e6e0-425e-8fa8-3db51d8e6e0d",
+            "sourceColumn": "Column5",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column6",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8cdede7c-8646-4dc9-8d04-4925063f8a2c",
+            "sourceColumn": "Column6",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column7",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f6553840-3a8b-49ca-aaee-d52215152938",
+            "sourceColumn": "Column7",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column8",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "dc6b9eed-44aa-4a47-94b2-f89e15f663ce",
+            "sourceColumn": "Column8",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column9",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "27c3a8fa-929b-408d-a0cc-42eb592fee3c",
+            "sourceColumn": "Column9",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column10",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "358c8496-c852-4844-a99d-1a7e541e2691",
+            "sourceColumn": "Column10",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column11",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ba677a0c-884f-4131-ae24-509b7a6c8b27",
+            "sourceColumn": "Column11",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column12",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3a466a75-2f39-4347-99ef-222991ac24a6",
+            "sourceColumn": "Column12",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column13",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a6e24d7a-d171-45a1-ad5b-a14d9c02bd24",
+            "sourceColumn": "Column13",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column14",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "36ab6025-4f17-4246-b812-d917c8028924",
+            "sourceColumn": "Column14",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column15",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4bd9a808-7920-4560-8883-310fc988a6f6",
+            "sourceColumn": "Column15",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column16",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "54f48200-da3e-4c55-b613-4b186d6ba9e7",
+            "sourceColumn": "Column16",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column17",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e5c15d0b-b9d1-43c2-94f6-d0504deab862",
+            "sourceColumn": "Column17",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column18",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2cd76032-9adf-4dcb-bab2-12f02664c859",
+            "sourceColumn": "Column18",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column19",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1a11952d-bf99-4dae-9633-d427a34d00e3",
+            "sourceColumn": "Column19",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column20",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7465b56e-2aa4-43b1-ac34-9f5856f2bd99",
+            "sourceColumn": "Column20",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column21",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "a35d73e9-b649-40d1-bf57-62260cfc3dd7",
+            "sourceColumn": "Column21",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column22",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "30386fe8-1afc-4ed9-8a1b-916d9b218114",
+            "sourceColumn": "Column22",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column23",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d3dfa238-9bd2-4c63-b7f2-02f36dd4c826",
+            "sourceColumn": "Column23",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column24",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4818a6ca-2cb6-4bdf-9aff-bc6f21183865",
+            "sourceColumn": "Column24",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column25",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5e2e6cd9-4c03-4fc1-953c-a32eb46f99d3",
+            "sourceColumn": "Column25",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column26",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4a02dec1-f870-4628-98ff-e5b858a8466c",
+            "sourceColumn": "Column26",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column27",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "1c648fb7-8aa5-4e3f-8062-f66eb4ab2f54",
+            "sourceColumn": "Column27",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Column28",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "41396930-4956-4018-8a9a-1621be0fe89b",
+            "sourceColumn": "Column28",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "29303a30-22bd-4bd2-8ff7-3ad13b66ed6f",
+        "partitions": [
+          {
+            "name": "Data Professional Survey",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\users\\user\\Downloads\\Data professional Survey dataset.xlsx\"), null, true),",
+                "    #\"Data Professional Survey_Sheet\" = Source{[Item=\"Data Professional Survey\",Kind=\"Sheet\"]}[Data]",
+                "in",
+                "    #\"Data Professional Survey_Sheet\""
+              ],
+              "type": "m"
             }
           }
         ]
