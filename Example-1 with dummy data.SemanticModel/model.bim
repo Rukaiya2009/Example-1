@@ -630,7 +630,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"C:\\users\\user\\Downloads\\Data professional Survey dataset.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\HP\\Documents\\GitHub\\Example-1\\Power BI - Final Project.xlsx\"), null, true),",
                 "    #\"Data Professional Survey_Sheet\" = Source{[Item=\"Data Professional Survey\",Kind=\"Sheet\"]}[Data]",
                 "in",
                 "    #\"Data Professional Survey_Sheet\""
