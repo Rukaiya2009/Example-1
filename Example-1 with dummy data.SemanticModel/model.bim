@@ -983,34 +983,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "Q3 - Current Yearly Salary (in USD) - Copy.1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "5ffb66ca-3ba4-4d0b-85f6-b6340f6e371c",
-            "sourceColumn": "Q3 - Current Yearly Salary (in USD) - Copy.1",
-            "summarizeBy": "sum"
-          },
-          {
-            "name": "Q3 - Current Yearly Salary (in USD) - Copy.2",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "int64",
-            "formatString": "0",
-            "lineageTag": "44880ee4-9dcb-4ff8-9ba6-c19417c99867",
-            "sourceColumn": "Q3 - Current Yearly Salary (in USD) - Copy.2",
-            "summarizeBy": "sum"
-          },
-          {
             "name": "Avarage salary",
             "annotations": [
               {
@@ -1019,7 +991,7 @@
               }
             ],
             "dataType": "string",
-            "lineageTag": "814dedea-b777-4d74-8adb-a73c9a703683",
+            "lineageTag": "f7730a99-8f9c-4cd9-9ad4-1f9ac8f1dab1",
             "sourceColumn": "Avarage salary",
             "summarizeBy": "none"
           }
@@ -1067,9 +1039,16 @@
                 "    #\"Filtered Rows7\" = Table.SelectRows(#\"Replaced Value1\", each true),",
                 "    #\"Replaced Value2\" = Table.ReplaceValue(#\"Filtered Rows7\",\"+\",\"225\",Replacer.ReplaceText,{\"Q3 - Current Yearly Salary (in USD) - Copy.2\"}),",
                 "    #\"Added Custom\" = Table.AddColumn(#\"Replaced Value2\", \"Avarage salary\", each ([#\"Q3 - Current Yearly Salary (in USD) - Copy.1\"]+[#\"Q3 - Current Yearly Salary (in USD) - Copy.2\"]) /2),",
-                "    #\"Changed Type6\" = Table.TransformColumnTypes(#\"Added Custom\",{{\"Q3 - Current Yearly Salary (in USD) - Copy.1\", Int64.Type}, {\"Q3 - Current Yearly Salary (in USD) - Copy.2\", Int64.Type}})",
+                "    #\"Filtered Rows8\" = Table.SelectRows(#\"Added Custom\", each true),",
+                "    #\"Changed Type6\" = Table.TransformColumnTypes(#\"Filtered Rows8\",{{\"Q3 - Current Yearly Salary (in USD) - Copy.1\", Int64.Type}, {\"Q3 - Current Yearly Salary (in USD) - Copy.2\", Int64.Type}}),",
+                "    #\"Filtered Rows9\" = Table.SelectRows(#\"Changed Type6\", each true),",
+                "    #\"Added Custom1\" = Table.AddColumn(#\"Filtered Rows9\", \"Custom\", each ([#\"Q3 - Current Yearly Salary (in USD) - Copy.1\"]+[#\"Q3 - Current Yearly Salary (in USD) - Copy.2\"])/2),",
+                "    #\"Removed Columns7\" = Table.RemoveColumns(#\"Added Custom1\",{\"Avarage salary\"}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns7\",{{\"Custom\", \"Avarage salary\"}}),",
+                "    #\"Removed Columns8\" = Table.RemoveColumns(#\"Renamed Columns\",{\"Q3 - Current Yearly Salary (in USD) - Copy.2\", \"Q3 - Current Yearly Salary (in USD) - Copy.1\"}),",
+                "    #\"Reordered Columns\" = Table.ReorderColumns(#\"Removed Columns8\",{\"Unique ID\", \"Email\", \"Date Taken (America/New_York)\", \"Time Taken (America/New_York)\", \"Time Spent\", \"Q1 - Which Title Best Fits your Current Role?.1\", \"Q2 - Did you switch careers into Data?\", \"Q3 - Current Yearly Salary (in USD)\", \"Avarage salary\", \"Q4 - What Industry do you work in?.1\", \"Q5 - Favorite Programming Language\", \"Q6 - How Happy are you in your Current Position with the following? (Salary)\", \"Q6 - How Happy are you in your Current Position with the following? (Work/Life Balance)\", \"Q6 - How Happy are you in your Current Position with the following? (Coworkers)\", \"Q6 - How Happy are you in your Current Position with the following? (Management)\", \"Q6 - How Happy are you in your Current Position with the following? (Upward Mobility)\", \"Q6 - How Happy are you in your Current Position with the following? (Learning New Things)\", \"Q7 - How difficult was it for you to break into Data?\", \"Q8 - If you were to look for a new job today, what would be the most important t\", \"Q9 - Male/Female?\", \"Q10 - Current Age\", \"Q11 - Which Country do you live in?.1\", \"Q13 - Ethnicity.1\"})",
                 "in",
-                "    #\"Changed Type6\""
+                "    #\"Reordered Columns\""
               ],
               "type": "m"
             }

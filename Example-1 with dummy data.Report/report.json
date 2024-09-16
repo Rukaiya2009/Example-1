@@ -40,7 +40,7 @@
       "width": 1280.00
     },
     {
-      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":8,\"Percent\":0.6}}}}}}}]}}",
+      "config": "{\"objects\":{\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}",
       "displayName": "Salma",
       "displayOption": 1,
       "filters": "[]",
